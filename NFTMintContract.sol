@@ -51,7 +51,7 @@ contract NFTMintContract {
     }
 
     // Function for users to mint the NFT by paying the specified amount
-    function mintZeroloosOatNFT(address referrer) external {
+    function mintZerolossOatNFT(address referrer) external {
         require(referrer != msg.sender, "Cannot refer yourself");
         require(!hasMinted[msg.sender], "Already minted");
         require(totalUniqueMints < MAX_UNIQUE_MINTS, "Maximum unique mints reached");
